@@ -20,11 +20,11 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <parent>
-    <groupId>com.redhat.rcm</groupId>
-    <artifactId>redhat-releng-tools</artifactId>
-    <version>11</version>
-  </parent>
+  <!-- <parent> -->
+  <!--   <groupId>com.redhat.rcm</groupId> -->
+  <!--   <artifactId>redhat-releng-tools</artifactId> -->
+  <!--   <version>11</version> -->
+  <!-- </parent> -->
 
   <groupId>org.goots</groupId>
   <artifactId>example-maven</artifactId>
@@ -57,4 +57,22 @@
       <artifactId>junit</artifactId>
     </dependency>
   </dependencies>
+
+
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>3.8.1</version>
+          <configuration>
+            <showWarnings>true</showWarnings>
+            <debug>true</debug>
+            <source>8</source>
+            <target>8</target>
+          </configuration>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
 </project>
