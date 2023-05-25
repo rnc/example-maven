@@ -21,6 +21,7 @@ package org.goots;
  */
 public class App 
 {
+    fail
     public static void main( String[] args )
     {
         System.out.println( "Hello World!" );
