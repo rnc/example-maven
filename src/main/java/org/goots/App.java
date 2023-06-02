@@ -15,6 +15,8 @@
  */
 package org.goots;
 
+import net.jpountz.lz4.LZ4Factory;
+
 /**
  * Hello world!
  *
@@ -23,6 +25,7 @@ public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        LZ4Factory factory = LZ4Factory.fastestJavaInstance();
+        System.out.println( "Hello World!" + factory );
     }
 }
